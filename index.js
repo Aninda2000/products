@@ -5,7 +5,7 @@ const db=require('./config/mongoose');
 
 app.use(express.urlencoded({extended:true}));
 
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes'));
 
 app.listen(port, function(err){
     if(err){
